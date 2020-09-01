@@ -6,7 +6,7 @@ import cors from "cors";
 
 import userRouter from "./routes/userRouter";
 import noteRouter from "./routes/noteRouter";
-import { join } from "path";
+// import { join } from "path";
 
 const app = express();
 app.use(json());
@@ -33,12 +33,12 @@ connect(
 );
 
 // if production use express static
-if (process.env.NODE_ENV === "production") {
-  app.use(static("../client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(join(__dirname, "client", "build", "index.html"));
-  });
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(static("../client/build"));
+//   app.get("*", (req, res) => {
+//     res.sendFile(join(__dirname, "client", "build", "index.html"));
+//   });
+// }
 
 //Listen Server
 const PORT = process.env.PORT || 5000;
