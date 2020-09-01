@@ -1,9 +1,4 @@
-import Notes, {
-  find,
-  findByIdAndDelete,
-  findOneAndUpdate,
-  findById,
-} from "../models/noteModel";
+const Notes = require("../models/noteModel");
 
 const noteCtrl = {
   //get all notes

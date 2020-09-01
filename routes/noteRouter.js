@@ -1,12 +1,6 @@
 const router = require("express").Router();
-import auth from "../middleware/auth";
-import {
-  getNotes,
-  createNote,
-  getNote,
-  updateNote,
-  deleteNote,
-} from "../controllers/noteCtrl";
+const auth = require("../middleware/auth");
+const noteCtrl = require("../controllers/noteCtrl");
 
 router.route("/").get(auth, getNotes).post(auth, createNote);
 

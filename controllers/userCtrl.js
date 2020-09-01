@@ -1,6 +1,6 @@
-import Users, { findOne, findById } from "../models/userModel";
-import { hash, compare } from "bcrypt";
-import { sign, verify } from "jsonwebtoken";
+const Users = require("../models/userModel");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
 const useCtrl = {
   // register a new user
