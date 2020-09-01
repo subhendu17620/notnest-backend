@@ -9,7 +9,7 @@ const noteRouter = require("./routes/noteRouter");
 const path = require("path");
 
 const app = express();
-app.use(json());
+app.use(express.json());
 app.use(cors());
 
 //Routes
@@ -18,7 +18,7 @@ app.use("/api/notes", noteRouter);
 
 //connect to mongoDB
 const db_url = process.env.MONGO_URL;
-connect(
+mongoose.connect(
   db_url,
   {
     useCreateIndex: true,

@@ -72,4 +72,4 @@ const useCtrl = {
   },
 };
 
-export default useCtrl;
+module.exports = useCtrl;

@@ -11,4 +11,5 @@ router.post("/login", userCtrl.loginUser);
 //verify Token
 router.get("/verify", userCtrl.verifiedToken);
 
-export default router;
+// export default router;
+module.exports = router

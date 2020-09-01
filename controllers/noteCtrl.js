@@ -64,4 +64,4 @@ const noteCtrl = {
   },
 };
 
-export default noteCtrl;
+module.exports = noteCtrl;
