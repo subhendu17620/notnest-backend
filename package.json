@@ -1,17 +1,12 @@
 {
-  "name": "mern-notes",
+  "name": "mern-notes-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for MERN application - Notnest",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "cd client && yarn start",
-    "client-install": "cd-client && yarn add",
-    "server-install": "npm install",
-    "install-all": "npm run server-install && npm run client-install",
-    "dev": "npm run client && npm run server",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "server-install": "npm install"
   },
   "author": "Subhendu",
   "license": "ISC",
